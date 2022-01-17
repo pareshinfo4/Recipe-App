@@ -1,0 +1,183 @@
+{
+	"id": "43065b9b-d2c6-d29f-dbac-6559b82218d8",
+	"name": "Recipe Management Endpoints",
+	"description": "",
+	"order": [
+		"74f2ee5a-1cef-caf5-f200-8a4260d0cffd",
+		"e1344a83-b79e-5297-8b64-cbc44c87ec4f",
+		"a4fee53a-32c8-dad9-e1ce-feba7333617c",
+		"a83d40ee-d3c8-9fb9-3cc4-5f9897f2285b",
+		"edbe1b4d-4053-9d90-a03c-ade2ae84e4de"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1641549243387,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "74f2ee5a-1cef-caf5-f200-8a4260d0cffd",
+			"headers": "Authorization: Basic YWRtaW46cGFzc3dvcmQ=\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46cGFzc3dvcmQ=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9393/recipes",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "43065b9b-d2c6-d29f-dbac-6559b82218d8",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:9393/recipes",
+			"description": "List all Recipe Details",
+			"descriptionFormat": "html",
+			"time": 1641549283441,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "a4fee53a-32c8-dad9-e1ce-feba7333617c",
+			"headers": "Authorization: Basic YWRtaW46cGFzc3dvcmQ=\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46cGFzc3dvcmQ=",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9393/updateRecipe/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "43065b9b-d2c6-d29f-dbac-6559b82218d8",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:9393/updateRecipe/1",
+			"description": "Update Recipe",
+			"descriptionFormat": "html",
+			"time": 1641549358221,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n        \"recipeId\": 1,\n        \"creationDate\": \"2021-10-20\",\n        \"isVeg\": true,\n        \"name\": \"Tamato curry\",\n        \"servings_no\": 4,\n        \"ingredientList\": [\n            {\n                \"id\": 1,\n                \"name\": \"tamato\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"oil\"\n            }\n        ],\n        \"cookingInstructions\": \"cook tamato in oil\"\n    }"
+		},
+		{
+			"id": "a83d40ee-d3c8-9fb9-3cc4-5f9897f2285b",
+			"headers": "Authorization: Basic YWRtaW46cGFzc3dvcmQ=\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46cGFzc3dvcmQ=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9393/deleteRecipe/2",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "43065b9b-d2c6-d29f-dbac-6559b82218d8",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:9393/deleteRecipe/2",
+			"description": "Delete Recipe",
+			"descriptionFormat": "html",
+			"time": 1641549377046,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "e1344a83-b79e-5297-8b64-cbc44c87ec4f",
+			"headers": "Authorization: Basic YWRtaW46cGFzc3dvcmQ=\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46cGFzc3dvcmQ=",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9393/addRecipe",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "43065b9b-d2c6-d29f-dbac-6559b82218d8",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:9393/addRecipe",
+			"description": "Create Recipe",
+			"descriptionFormat": "html",
+			"time": 1641549341077,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n        \n        \"creationDate\": \"2021-10-20\",\n        \"isVeg\": true,\n        \"name\": \"Patato curry\",\n        \"servings_no\": 4,\n        \"ingredientList\": [\n            {\n               \n                \"name\": \"Patato\"\n            },\n            {\n               \n                \"name\": \"oil\"\n            }\n        ],\n        \"cookingInstructions\": \"cook patato in oil\"\n    }"
+		},
+		{
+			"id": "edbe1b4d-4053-9d90-a03c-ade2ae84e4de",
+			"headers": "Authorization: Basic YWRtaW46cGFzc3dvcmQ=\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46cGFzc3dvcmQ=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9393/recipe/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "43065b9b-d2c6-d29f-dbac-6559b82218d8",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:9393/recipe/1",
+			"description": "Get Recipe ById",
+			"descriptionFormat": "html",
+			"time": 1641549418621,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
